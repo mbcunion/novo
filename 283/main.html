@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>학습 자료</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .pdf-container {
+      flex: 1;
+      padding: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 80vh;
+      border: none;
+    }
+    .fallback-link {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .fallback-link a {
+      color: #007bff;
+      text-decoration: underline;
+    }
+    .quiz-link {
+      padding: 20px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    .quiz-link a {
+      text-decoration: none;
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .quiz-link a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pdf-container">
+    <!-- Safari 및 모바일 대응용 PDF -->
+    <iframe src="283.pdf"></iframe>
+    <div class="fallback-link">
+      PDF가 보이지 않나요? <a href="283.pdf" target="_blank" rel="noopener">여기서 열기</a>
+    </div>
+  </div>
+
+  <div class="quiz-link">
+    <a href="quiz.html">퀴즈 풀기</a>
+  </div>
+
+</body>
+</html>
